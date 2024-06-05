@@ -1,0 +1,5 @@
+jhakkari@lx1-fuxi289:~/devops-with-docker$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+86b8f37ffcb4   odoo      "/entrypoint.sh odoo"    About a minute ago   Exited (1) 43 seconds ago             priceless_roentgen
+68ddacab010e   mongo     "docker-entrypoint.s…"   About a minute ago   Exited (0) 13 seconds ago             dreamy_swartz
+6bb2f01b852b   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    vibrant_bassi
