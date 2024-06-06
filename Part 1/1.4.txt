@@ -1,0 +1,7 @@
+docker run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo
+docker container ls
+docker exec -it amazing_haslett bash
+
+apt-get update
+apt install curl
+Y

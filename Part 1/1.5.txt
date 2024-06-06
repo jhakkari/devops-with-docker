@@ -1,0 +1,22 @@
+Size comparation:
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+
+(base) jhakkari@lx1-fuxi289:~$ docker pull devopsdockeruh/simple-web-service:alpine
+alpine: Pulling from devopsdockeruh/simple-web-service
+ba3557a56b15: Pull complete 
+1dace236434b: Pull complete 
+4f4fb700ef54: Pull complete 
+Digest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+
+docker run -d -it --name testi2 devopsdockeruh/simple-web-service:alpine
+4ebaaa7052ee3122fba2a0629042c7d5786db14ab34628351b442e8b35bd4b21
+
+(base) jhakkari@lx1-fuxi289:~$ docker exec -it testi2 sh
+/usr/src/app # tail -f ./text.log
+2024-06-06 19:25:38 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
+Secret message is the same!
