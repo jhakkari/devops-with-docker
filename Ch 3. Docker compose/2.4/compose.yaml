@@ -1,0 +1,13 @@
+services:
+  frontend:
+    image: hello-frontend:latest
+    ports:
+      - "5001:5001"
+  backend:
+    image: hello-backend:latest
+    environment:
+      - REDIS_HOST=redis
+    ports:
+      - "8080:8080"
+  redis:
+    image: redis:latest
